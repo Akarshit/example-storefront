@@ -2,7 +2,7 @@ import { GraphQLClient } from "graphql-request";
 import appConfig from "../config";
 
 /**
- * Executes an arbitrary GraphQL query against the Reaction API
+ * Executes an arbitrary GraphQL query against the api-server
  *
  * @param {Object} query - The GraphQL query to execute
  * @param {Object} variables - The query's variables

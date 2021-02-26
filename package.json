@@ -1,11 +1,11 @@
 {
   "name": "example-storefront",
   "version": "4.0.1",
-  "description": "The Example Storefront serves as a reference for implementing a web based storefront using the Reaction Commerce GraphQL API.",
+  "description": "The Example Storefront serves as a reference for implementing a web based storefront using the Mailchimp Open Commerce GraphQL API.",
   "keywords": [],
   "author": {
-    "name": "Reaction Commerce",
-    "email": "engineering@reactioncommerce.com",
+    "name": "Mailchimp Open Commerce",
+    "email": "engineering@opencommerce.mailchimp.com",
     "url": "https://reactioncommerce.com"
   },
   "license": "Apache-2.0",
@@ -21,7 +21,7 @@
     "test:ci": "yarn run test:unit --ci --runInBand --colors",
     "test:unit": "NODE_ENV=jesttest jest",
     "test:unit:watch": "NODE_ENV=jesttest jest --watchAll",
-    "test:link": "blc http://web.reaction.localhost:4000 -ro -filter=3 -e",
+    "test:link": "blc http://web.opencommerce.localhost:4000 -ro -filter=3 -e",
     "test:file": "NODE_ENV=jesttest jest --watch --no-coverage",
     "create-hydra-client": "node createHydraClientIfNecessary.js",
     "postinstall": "is-ci || is-docker || husky install",

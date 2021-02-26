@@ -5,22 +5,22 @@ import Chip from "@material-ui/core/Chip";
 
 const styles = (theme) => ({
   orderStatusNew: {
-    backgroundColor: `${theme.palette.reaction.darkBlue300}`,
+    backgroundColor: `${theme.palette.moc.darkBlue300}`,
     color: "white",
     fontWeight: "800"
   },
   orderStatusCanceled: {
-    backgroundColor: `${theme.palette.reaction.red300}`,
+    backgroundColor: `${theme.palette.moc.red300}`,
     color: "white",
     fontWeight: "800"
   },
   orderStatusProcessing: {
-    backgroundColor: `${theme.palette.reaction.darkBlue300}`,
+    backgroundColor: `${theme.palette.moc.darkBlue300}`,
     color: "white",
     fontWeight: "800"
   },
   orderStatusShipped: {
-    backgroundColor: `${theme.palette.reaction.reactionBlue}`,
+    backgroundColor: `${theme.palette.moc.mocBlue}`,
     color: "white",
     fontWeight: "800"
   }

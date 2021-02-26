@@ -14,7 +14,7 @@ orbs:
 defaults: &defaults
   environment:
     - CI_SCRIPTS: "npx --quiet --package @reactioncommerce/ci-scripts@1.9.1"
-    - DOCKER_REPOSITORY: "reactioncommerce/example-storefront"
+    - DOCKER_REPOSITORY: "mailchimp-open-commerce/example-storefront"
     - DOCKER_NAME: "example-storefront"
     - GITOPS_PR_WEBHOOK: "https://w603b5hwp1.execute-api.us-east-1.amazonaws.com/dev/pullrequests"
     - GLOBAL_CACHE_VERSION: “v3”
@@ -28,17 +28,17 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - reaction-v3-node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-            - reaction-v3-node-modules-{{ .Branch }}
+            - mailchimp-open-commerce-v3-node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+            - mailchimp-open-commerce-v3-node-modules-{{ .Branch }}
       - run:
           name: Install NPM dependencies
           command: yarn install --production=false --frozen-lockfile --non-interactive
       - save_cache:
-          key: reaction-v3-node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          key: mailchimp-open-commerce-v3-node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
       - save_cache:
-          key: reaction-v3-node-modules-{{ .Branch }}
+          key: mailchimp-open-commerce-v3-node-modules-{{ .Branch }}
           paths:
             - node_modules
 
@@ -59,8 +59,8 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - reaction-v3-node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-            - reaction-v3-node-modules-{{ .Branch }}
+            - mailchimp-open-commerce-v3-node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+            - mailchimp-open-commerce-v3-node-modules-{{ .Branch }}
       - run:
           name: Lint JavaScript
           command: yarn run lint
@@ -71,8 +71,8 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - reaction-v3-node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-            - reaction-v3-node-modules-{{ .Branch }}
+            - mailchimp-open-commerce-v3-node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+            - mailchimp-open-commerce-v3-node-modules-{{ .Branch }}
       - run:
           name: Run Unit Tests
           command: yarn run test:ci
@@ -94,7 +94,7 @@ jobs:
     <<: *defaults
     steps:
       - run:
-          name: Clone reaction-gitops repo and create PR
+          name: Clone gitops repo and create PR
           command: |
             ${CI_SCRIPTS} automate-gitops-pull-request
 workflows:
@@ -112,7 +112,7 @@ workflows:
           requires:
             - install-dependencies
       - docker-build-push:
-          context: reaction-publish-docker
+          context: publish-docker
           requires:
             - dockerfile-lint
             - eslint

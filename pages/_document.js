@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet as StyledComponentSheets } from "styled-components";
 import { ServerStyleSheets as MaterialUiServerStyleSheets } from "@material-ui/styles";
 import favicons from "custom/favicons";
-import theme from "custom/reactionTheme";
+import theme from "custom/mocTheme";
 import definedPaymentMethods from "custom/paymentMethods";
 import analyticsProviders from "custom/analytics";
 
@@ -41,10 +41,10 @@ class HTMLDocument extends Document {
     ];
     definedPaymentMethods
       .some((method) => method.name === "stripe_card")
-        && scripts.push({
-          type: "text/javascript",
-          src: "https://js.stripe.com/v3/"
-        });
+      && scripts.push({
+        type: "text/javascript",
+        src: "https://js.stripe.com/v3/"
+      });
 
     return (
       <Html lang="en">

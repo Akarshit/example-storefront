@@ -13,10 +13,10 @@ const styles = (theme) => ({
     marginTop: "4rem"
   },
   actionMessage: {
-    color: theme.palette.reaction.coolGrey400
+    color: theme.palette.moc.coolGrey400
   },
   notFoundMessage: {
-    color: theme.palette.reaction.black65
+    color: theme.palette.moc.black65
   }
 });
 
@@ -46,7 +46,7 @@ class ProductGridEmptyMessage extends Component {
       <div className={classes.root}>
         <Typography className={classes.notFoundMessage} paragraph>{notFoundMessage}</Typography>
         <Typography className={classes.actionMessage}>
-          { resetLink && <Link route={resetLink}>{actionMessage}</Link>}
+          {resetLink && <Link route={resetLink}>{actionMessage}</Link>}
         </Typography>
       </div>
     );

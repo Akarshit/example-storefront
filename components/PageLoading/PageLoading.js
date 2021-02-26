@@ -72,7 +72,7 @@ class PageLoading extends Component {
           strokeDasharray="47.12388980384689 47.12388980384689"
           strokeLinecap="round"
           strokeWidth="2"
-          stroke={theme.palette.reaction.pageLoading.outerColor}
+          stroke={theme.palette.moc.pageLoading.outerColor}
           transform="rotate(37.5323 50 50)"
         >
           <animateTransform
@@ -95,7 +95,7 @@ class PageLoading extends Component {
           strokeDashoffset="42.411500823462205"
           strokeLinecap="round"
           strokeWidth="2"
-          stroke={theme.palette.reaction.pageLoading.innerColor}
+          stroke={theme.palette.moc.pageLoading.innerColor}
           transform="rotate(-37.5323 50 50)"
         >
           <animateTransform

@@ -13,21 +13,21 @@ import OrderCardStatusBadge from "components/OrderCardStatusBadge";
 
 const styles = (theme) => ({
   orderCardHeader: {
-    background: theme.palette.reaction.black02,
+    background: theme.palette.moc.black02,
     padding: theme.spacing(2)
   },
   orderCardInfoText: {
-    color: theme.palette.reaction.coolGrey500
+    color: theme.palette.moc.coolGrey500
   },
   orderCardInfoHeaderText: {
     marginBottom: theme.spacing(0.5)
   },
   orderCardInfoTextBold: {
-    color: theme.palette.reaction.coolGrey500,
+    color: theme.palette.moc.coolGrey500,
     fontWeight: theme.typography.fontWeightBold
   },
   orderCardInfoTextDetails: {
-    color: theme.palette.reaction.coolGrey500,
+    color: theme.palette.moc.coolGrey500,
     textAlign: "right"
   },
   orderCardInfoExpandIcon: {
@@ -35,7 +35,7 @@ const styles = (theme) => ({
     padding: 0
   },
   orderCardExpandedHeader: {
-    borderTop: `solid 1px ${theme.palette.reaction.black10}`,
+    borderTop: `solid 1px ${theme.palette.moc.black10}`,
     marginTop: theme.spacing(2.5),
     paddingTop: theme.spacing(2.5)
   },
@@ -46,7 +46,7 @@ const styles = (theme) => ({
     marginBottom: theme.spacing(1.5)
   },
   orderAddressText: {
-    color: theme.palette.reaction.black65,
+    color: theme.palette.moc.black65,
     fontSize: "14px"
   }
 });

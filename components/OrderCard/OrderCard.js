@@ -9,7 +9,7 @@ import PageLoading from "components/PageLoading";
 
 const styles = (theme) => ({
   orderCard: {
-    border: `solid 1px ${theme.palette.reaction.black10}`,
+    border: `solid 1px ${theme.palette.moc.black10}`,
     borderRadius: "2px",
     marginBottom: theme.spacing(2.5)
   },

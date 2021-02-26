@@ -1,4 +1,4 @@
-This directory contains project hooks for the Reaction development environment.
+This directory contains project hooks for the development environment.
 They are invoked from the reaction-next build tools which operate across all
 projects to aid with orchestration.
 

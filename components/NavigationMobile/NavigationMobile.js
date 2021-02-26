@@ -30,8 +30,8 @@ const styles = (theme) => ({
   },
   title: {
     display: "inline-block",
-    color: theme.palette.reaction.reactionBlue,
-    borderBottom: `solid 5px ${theme.palette.reaction.reactionBlue200}`
+    color: theme.palette.moc.mocBlue,
+    borderBottom: `solid 5px ${theme.palette.moc.mocBlue200}`
   },
   menu: {
     flex: "1 1 auto",

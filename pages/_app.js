@@ -5,7 +5,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { ContextProviders } from "context/ContextProviders";
 import { ComponentsProvider } from "@reactioncommerce/components-context";
 import components from "custom/componentsContext";
-import theme from "custom/reactionTheme";
+import theme from "custom/mocTheme";
 
 export default class App extends NextApp {
   componentDidMount() {

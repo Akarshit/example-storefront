@@ -6,9 +6,9 @@ export default (theme) => ({
     "backgroundColor": theme.palette.primary.contrastText,
     "border": "1px solid",
     "minWidth": 150,
-    "borderColor": theme.palette.reaction.borderColor,
+    "borderColor": theme.palette.moc.borderColor,
     "&:hover": {
-      borderColor: theme.palette.reaction.activeElementBorderColor
+      borderColor: theme.palette.moc.activeElementBorderColor
     },
     "&:focus": {
       outline: "auto 5px -webkit-focus-ring-color"
@@ -19,7 +19,7 @@ export default (theme) => ({
     fontSize: "0.9rem"
   },
   isSelected: {
-    borderColor: theme.palette.reaction.activeElementBorderColor
+    borderColor: theme.palette.moc.activeElementBorderColor
   },
   soldOutOption: {
     opacity: 0.2

@@ -1,6 +1,6 @@
 # Testing
 
-See the [Architecture Decision Records #5](https://github.com/reactioncommerce/reaction-next-starterkit/tree/master/docs/architecture/decisions) about why we test the way we do.
+See the [Architecture Decision Records #5](https://github.com/mailchimp-open-commerce/example-storefront/tree/master/docs/architecture/decisions) about why we test the way we do.
 
 ## Patterns
 

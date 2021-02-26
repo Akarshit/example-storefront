@@ -13,10 +13,10 @@ const styles = (theme) => ({
     marginTop: "4rem"
   },
   errorMessage: {
-    color: theme.palette.reaction.black65
+    color: theme.palette.moc.black65
   },
   errorLink: {
-    color: theme.palette.reaction.coolGrey400
+    color: theme.palette.moc.coolGrey400
   }
 });
 
@@ -52,15 +52,15 @@ class Error extends Component {
         {statusCode ? (
           <Typography variant="h5">{statusCode}</Typography>
         ) : (
-          <Fragment>
-            <Typography className={classes.errorMessage} paragraph>
-              Sorry! We couldn't find what you're looking for.
+            <Fragment>
+              <Typography className={classes.errorMessage} paragraph>
+                Sorry! We couldn't find what you're looking for.
             </Typography>
-            <Typography className={classes.errorLink}>
-              <Link route="/">Home</Link>
-            </Typography>
-          </Fragment>
-        )}
+              <Typography className={classes.errorLink}>
+                <Link route="/">Home</Link>
+              </Typography>
+            </Fragment>
+          )}
       </div>
     );
   }

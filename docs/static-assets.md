@@ -18,4 +18,4 @@ Out of the box the starterkit leverages [fonts.google.com](https://fonts.google.
 
 **Icons**
 We feel icons are best handled as SVGs within React components and not as a static asset. 
-See [MDI](https://github.com/TeamWertarbyte/mdi-material-ui) and [Reaction Design System's svg directory](https://github.com/reactioncommerce/reaction-component-library/tree/master/package/src/svg) for more info.
+See [MDI](https://github.com/TeamWertarbyte/mdi-material-ui) and [Mailchimp Open Commerce Design System's svg directory](https://github.com/mailchimp-open-commerce/component-library/tree/master/package/src/svg) for more info.

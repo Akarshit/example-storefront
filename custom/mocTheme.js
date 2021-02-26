@@ -41,7 +41,7 @@ const theme = createMuiTheme({
     borders: {
       default: "1px solid #e6e6e6"
     },
-    reaction: {
+    moc: {
       activeElementBorderColor: "#94E8D1",
       activeElementBackground: "#E6E6E6",
       badges: {
@@ -74,13 +74,13 @@ const theme = createMuiTheme({
       black02: "#fafafa",
       white: "#ffffff",
       // medium colors
-      reactionBlue: "#1999dd",
-      reactionBlue100: "#ecf8fe",
-      reactionBlue200: "#d6e5ed",
-      reactionBlue300: "#26b0f9",
-      reactionBlue400: "#067ebe",
-      reactionBlue500: "#285268",
-      reactionBlue600: "#172f3c",
+      mocBlue: "#1999dd",
+      mocBlue100: "#ecf8fe",
+      mocBlue200: "#d6e5ed",
+      mocBlue300: "#26b0f9",
+      mocBlue400: "#067ebe",
+      mocBlue500: "#285268",
+      mocBlue600: "#172f3c",
       coolGrey: "#5e7480",
       coolGrey100: "#e3ebf0",
       coolGrey200: "#d5d5d5",

@@ -16,9 +16,9 @@ import MiniCart from "components/MiniCart";
 
 const styles = (theme) => ({
   appBar: {
-    backgroundColor: theme.palette.reaction.white,
-    borderBottom: `solid 1px ${theme.palette.reaction.black05}`,
-    color: theme.palette.reaction.coolGrey500
+    backgroundColor: theme.palette.moc.white,
+    borderBottom: `solid 1px ${theme.palette.moc.black05}`,
+    color: theme.palette.moc.coolGrey500
   },
   controls: {
     alignItems: "inherit",
@@ -26,9 +26,9 @@ const styles = (theme) => ({
     flex: 1
   },
   title: {
-    color: theme.palette.reaction.reactionBlue,
+    color: theme.palette.moc.mocBlue,
     marginRight: theme.spacing(),
-    borderBottom: `solid 5px ${theme.palette.reaction.reactionBlue200}`
+    borderBottom: `solid 5px ${theme.palette.moc.mocBlue200}`
   },
   toolbar: {
     alignItems: "center",
@@ -84,7 +84,7 @@ class Header extends Component {
           <AccountDropdown />
           <MiniCart />
         </Toolbar>
-        <NavigationMobile shop={shop}/>
+        <NavigationMobile shop={shop} />
       </AppBar>
     );
   }

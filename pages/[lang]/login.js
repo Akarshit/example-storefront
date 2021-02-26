@@ -18,12 +18,12 @@ import fetchTranslations from "staticUtils/translations/fetchTranslations";
 
 const styles = (theme) => ({
   backLink: {
-    "color": theme.palette.reaction.black80,
+    "color": theme.palette.moc.black80,
     "cursor": "pointer",
     "fontFamily": theme.typography.fontFamily,
     "fontSize": 14,
     "&:hover": {
-      color: theme.palette.reaction.reactionBlue400
+      color: theme.palette.moc.mocBlue400
     }
   },
   backLinkText: {
@@ -38,16 +38,16 @@ const styles = (theme) => ({
   },
   header: {
     alignContent: "center",
-    borderBottom: `solid 1px ${theme.palette.reaction.black10}`,
+    borderBottom: `solid 1px ${theme.palette.moc.black10}`,
     display: "flex",
     justifyContent: "center",
     marginBottom: theme.spacing(3),
     padding: theme.spacing(3)
   },
   logo: {
-    color: theme.palette.reaction.reactionBlue,
+    color: theme.palette.moc.mocBlue,
     margin: "auto",
-    borderBottom: `solid 5px ${theme.palette.reaction.reactionBlue200}`
+    borderBottom: `solid 5px ${theme.palette.moc.mocBlue200}`
   },
   main: {
     flex: "1 1 auto",

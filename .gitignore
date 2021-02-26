@@ -26,7 +26,7 @@ results
 allure-results
 package-lock.json
 
-.reaction/config.json
+.moc/config.json
 
 .next/*
 src/.next/*

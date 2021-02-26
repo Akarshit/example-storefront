@@ -30,10 +30,10 @@ const styles = (theme) => ({
   },
   guestWrapper: {
     ...flexWrapper(),
-    borderTop: `solid 1px ${theme.palette.reaction.black10}`,
+    borderTop: `solid 1px ${theme.palette.moc.black10}`,
     paddingTop: theme.spacing(8),
     [theme.breakpoints.up("md")]: {
-      borderLeft: `solid 1px ${theme.palette.reaction.black10}`,
+      borderLeft: `solid 1px ${theme.palette.moc.black10}`,
       borderTop: "none",
       paddingLeft: theme.spacing(8),
       paddingTop: 0
@@ -57,7 +57,7 @@ class Entry extends Component {
     onRegisterButtonClick() {
       Router.push("/signup");
     },
-    setEmailOnAnonymousCart() {}
+    setEmailOnAnonymousCart() { }
   };
 
   render() {

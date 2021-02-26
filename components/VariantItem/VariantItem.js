@@ -16,11 +16,11 @@ const styles = (theme) => ({
     "borderRadius": "2px",
     "backgroundColor": theme.palette.primary.contrastText,
     "border": "1px solid",
-    "borderColor": theme.palette.reaction.borderColor,
+    "borderColor": theme.palette.moc.borderColor,
     "padding": theme.spacing(2),
     "&:hover": {
       border: "1px solid",
-      borderColor: theme.palette.reaction.activeElementBorderColor,
+      borderColor: theme.palette.moc.activeElementBorderColor,
       backgroundColor: theme.palette.primary.contrastText
     },
     "&:focus": {
@@ -29,7 +29,7 @@ const styles = (theme) => ({
   },
   activeVariant: {
     border: "1px solid",
-    borderColor: theme.palette.reaction.activeElementBorderColor
+    borderColor: theme.palette.moc.activeElementBorderColor
   },
   soldOutVariant: {
     opacity: 0.2

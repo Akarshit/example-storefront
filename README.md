@@ -1,37 +1,37 @@
 # Example Storefront
 
-[Reaction Commerce](http://reactioncommerce.com) is an API-first, headless commerce platform built using Node.js, React, and GraphQL. It plays nicely with npm, Docker and Kubernetes.
+[Mailchimp Open Commerce](http://reactioncommerce.com) is an API-first, headless commerce platform built using Node.js, React, and GraphQL. It plays nicely with npm, Docker and Kubernetes.
 
-This Example Storefront is to serve as a reference on how to implement a web based storefront using the Reaction Commerce GraphQL API. You can fork this project as a jumping off point or create your own custom experience using your prefered client-side technology. While we believe our example storefront is full featured enough to use in production, it may be missing features your shop requires at this time.
+This Example Storefront is to serve as a reference on how to implement a web based storefront using the Mailchimp Open Commerce GraphQL API. You can fork this project as a jumping off point or create your own custom experience using your prefered client-side technology. While we believe our example storefront is full featured enough to use in production, it may be missing features your shop requires at this time.
 
 ## Features
-Reaction comes with a robust set of core commerce capabilities right out of the box. And since anything in our codebase can be extended, overwritten, or installed as a package, you may also customize anything on our platform.
+Mailchimp Open Commerce comes with a robust set of core commerce capabilities right out of the box. And since anything in our codebase can be extended, overwritten, or installed as a package, you may also customize anything on our platform.
 
-Check out the full list of Reaction [features](https://www.reactioncommerce.com/features) and [release history](https://reactioncommerce.com/roadmap) for more info.
+Check out the full list of Mailchimp Open Commerce [features](https://www.reactioncommerce.com/features) and [release history](https://reactioncommerce.com/roadmap) for more info.
 
 This example storefront is built with [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [GraphQL](https://graphql.org/), and [Apollo Client](https://www.apollographql.com/docs/react/)
 
 - Headless ecommerce example storefront built with [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [GraphQL](https://graphql.org/), [Apollo Client](https://www.apollographql.com/docs/react/)
-- [Reaction GraphQL API](https://github.com/reactioncommerce/reaction/tree/master/imports/plugins/core/graphql) integration
+- [Mailchimp Open Commerce GraphQL API](https://github.com/mailchimp-open-commerce/api-server/tree/master/imports/plugins/core/graphql) integration
 - Server-side rendering
 - Payments with [Stripe](https://stripe.com/)
 - Analytics with [Segment](https://segment.com/) or any other provider
-- Reusable, customizable, themeable ecommerce React components from the [Example Storefront Component Library](https://github.com/reactioncommerce/reaction-component-library/) with [Styled Components](https://www.styled-components.com/)
+- Reusable, customizable, themeable ecommerce React components from the [Example Storefront Component Library](https://github.com/mailchimp-open-commerce/component-library/) with [Styled Components](https://www.styled-components.com/)
 - Written in ES6, configured with ES6
 - Containerized with Docker
 
 ## Getting Started
 
-Follow the [Reaction Platform docs](https://docs.reactioncommerce.com/docs/installation-reaction-platform) to install and run all the services necessary to run the storefront:
+Follow the [Mailchimp Open Commerce Platform docs](https://docs.reactioncommerce.com/docs/installation-reaction-platform) to install and run all the services necessary to run the storefront:
 
 | Directory: Service                                                                            | URL                                              |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [`reaction`](https://github.com/reactioncommerce/reaction): GraphQL API                       | [localhost:3000/graphql](localhost:3000/graphql) |
-| [`reaction`](https://github.com/reactioncommerce/reaction): GraphQL Playground developer tool | [localhost:3000/graphql](localhost:3000/graphql) |
-| [`reaction`](https://github.com/reactioncommerce/reaction): Reaction Admin                    | [localhost:4080](localhost:4080)                 |
-| [`reaction`](https://github.com/reactioncommerce/reaction): MongoDB                           | [localhost:27017](localhost:27017)               |
-| [`reaction-hydra`](https://github.com/reactioncommerce/reaction-hydra): Authentication        | [localhost:4444](localhost:4444)                 |
-| [`example-storefront`](https://github.com/reactioncommerce/example-storefront): Storefront    | [localhost:4000](localhost:4000)                 |
+| [`api-server`](https://github.com/mailchimp-open-commerce/api-server): GraphQL API                       | [localhost:3000/graphql](localhost:3000/graphql) |
+| [`api-server`](https://github.com/mailchimp-open-commerce/api-server): GraphQL Playground developer tool | [localhost:3000/graphql](localhost:3000/graphql) |
+| [`api-server`](https://github.com/mailchimp-open-commerce/api-server): Mailchimp Open Commerce Admin                    | [localhost:4080](localhost:4080)                 |
+| [`api-server`](https://github.com/mailchimp-open-commerce/api-server): MongoDB                           | [localhost:27017](localhost:27017)               |
+| [`authentication`](https://github.com/mailchimp-open-commerce/authentication): Authentication        | [localhost:4444](localhost:4444)                 |
+| [`example-storefront`](https://github.com/mailchimp-open-commerce/example-storefront): Storefront    | [localhost:4000](localhost:4000)                 |
 
 **Note**: The storefront has redirects so that if you open [http://localhost:4000/graphql](http://localhost:4000/graphql), you'll be redirected to the GraphQL Playground.
 
@@ -39,10 +39,10 @@ Follow the [Reaction Platform docs](https://docs.reactioncommerce.com/docs/insta
 
 ### Set up Stripe
 
-When running the storefront and Reaction for the first time, you will need to configure Stripe payment processing and shipping options to test a complete order checkout flow. After signing up for a Stripe API key, follow these steps:
+When running the storefront and Mailchimp Open Commerce for the first time, you will need to configure Stripe payment processing and shipping options to test a complete order checkout flow. After signing up for a Stripe API key, follow these steps:
 
 1. Add public Stripe API key (`STRIPE_PUBLIC_API_KEY`) to `.env`.
-2. Open the Reaction Classic app, at `http://localhost:3000`. Log in as an Admin user.
+2. Open the Mailchimp Open Commerce Classic app, at `http://localhost:3000`. Log in as an Admin user.
 3. Open **Payments**: Enable Stripe by checking the box. Add a Stripe secret key and public key.
 4. Open **Shipping**: Enable flat-rate shipping by checking the box. Enable at least one type of flat-rate shipping by clicking on the option in the table and checking the box.
 
@@ -60,7 +60,7 @@ Read the docs for [setting up Segment or a custom analytics tracker](docs/tracki
 
 ## Development
 
-The Reaction Platform runs the storefront with Docker, so you will have to use Docker commands to view logs, run commands inside the container and more. To run commands specifically for the storefront, make sure to change directories into the `example-storefront` directory within the `reaction-platform` repository:
+The Mailchimp Open Commerce Platform runs the storefront with Docker, so you will have to use Docker commands to view logs, run commands inside the container and more. To run commands specifically for the storefront, make sure to change directories into the `example-storefront` directory within the `dev-platform` repository:
 ```sh
 cd example-storefront
 ```
@@ -144,9 +144,9 @@ docker-compose up -d --build
 
 ### Testing component library in the storefront
 
-Sometimes we need to test the [Example Storefront Component Library](https://github.com/reactioncommerce/reaction-component-library) components in the context of the storefront. Unfortunately, there isn't an easy wasy to do this within our Docker containers, so we need to run the `storefront` outside of docker.
+Sometimes we need to test the [Example Storefront Component Library](https://github.com/mailchimp-open-commerce/component-library) components in the context of the storefront. Unfortunately, there isn't an easy wasy to do this within our Docker containers, so we need to run the `storefront` outside of docker.
 
-1. `cd` to your local [`reaction-component-library`](https://github.com/reactioncommerce/reaction-component-library) repo.
+1. `cd` to your local [`component-library`](https://github.com/mailchimp-open-commerce/component-library) repo.
 1. Git checkout the proper branch that you want to link
 1. `cd` into the `package` folder of this repo, and run the command `yarn install` followed by `yarn build`
 1. After the build is done, `cd` into the new `dist` folder it just built and run `yarn link` to allow the library to be installed into the storefront. This will link `@reactioncommerce/components`
@@ -158,7 +158,7 @@ Sometimes we need to test the [Example Storefront Component Library](https://git
     - If you see errors about not being able to find peer dependency packages, that seems to be an issues with yarn linking. You can just temporarily `yarn add` each of those packages in the component library `package/dist` folder. (This folder is gitignored anyway.)
 1. After your changes are tested, shut down the storefront by running the command `CTRL+C`
 1. Run `yarn unlink "@reactioncommerce/components"` in the storefront repo folder
-1. `cd` to the `package/dist` folder of the `reaction-component-library` repo. Run the command `yarn unlink` to unlink the local version of the component library
+1. `cd` to the `package/dist` folder of the `component-library` repo. Run the command `yarn unlink` to unlink the local version of the component library
 1. Undo the renaming of your `.yarnrc` file
 1. Undo the URL change inside your `.env` file
 
@@ -185,14 +185,14 @@ Sometimes it is helpful during development to make a production build of the app
 Run this command to build a Docker image with the production build of the app in it:
 
 ```sh
-docker build --network=host -t  reactioncommerce/example-storefront:X.X.X .
+docker build --network=host -t  mailchimp-open-commerce/example-storefront:X.X.X .
 ```
 Where X.X.X indicates the tag version you want to use, i.e. `3.1.0`
 
-Then, to start the app on your machine, make sure the Reaction API container is already running and enter:
+Then, to start the app on your machine, make sure the api-server container is already running and enter:
 
 ```sh
-docker run -it --name storefront -p 4000:4000 --env-file .env.prod --network reaction.localhost reactioncommerce/example-storefront:X.X.X
+docker run -it --name storefront -p 4000:4000 --env-file .env.prod --network opencommerce.localhost mailchimp-open-commerce/example-storefront:X.X.X
 ```
 
 _**NOTE:** You can replace the number before the colon in `4000:4000` with a different localhost port you'd like the application to run at._
@@ -202,16 +202,16 @@ _**NOTE:** This is not the way to run the app in actual production deployment. T
 To stop the Docker container after starting it with the above command, use:
 
 ```sh
-docker stop reaction-storefront
+docker stop example-storefront
 ```
 
 ## Contribute
 
-Find a bug, a typo, or something that’s not documented well? We’d love for you to [open an issue](https://github.com/reactioncommerce/example-storefront/issues) telling us what we can improve!
+Find a bug, a typo, or something that’s not documented well? We’d love for you to [open an issue](https://github.com/mailchimp-open-commerce/example-storefront/issues) telling us what we can improve!
 
-Want to request a feature? Use our [Reaction Feature Requests repository](https://github.com/reactioncommerce/reaction-feature-requests) to file a request.
+Want to request a feature? Use our [Mailchimp Open Commerce Feature Requests repository](https://github.com/mailchimp-open-commerce/reaction-feature-requests) to file a request.
 
-We love your pull requests! Check our our [`Good First Issue`](https://github.com/reactioncommerce/example-storefront/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) and [`Help Wanted`](https://github.com/reactioncommerce/example-storefront/issues?q=label%3A%22help+wanted%22) tags for good issues to tackle.
+We love your pull requests! Check our our [`Good First Issue`](https://github.com/mailchimp-open-commerce/example-storefront/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) and [`Help Wanted`](https://github.com/mailchimp-open-commerce/example-storefront/issues?q=label%3A%22help+wanted%22) tags for good issues to tackle.
 
 ### Pull Request guidelines
 Pull requests should pass all automated tests, style, and security checks.
@@ -221,7 +221,7 @@ Your code should pass all [acceptance tests and unit tests](https://docs.reactio
 ```sh
 docker-compose run --rm web yarn test
 ```
-to run the test suites locally. If you're adding functionality to Reaction, you should add tests for the added functionality. You can run the tests locally without cache if necessary by passing the `--no-cache` flag. This can be helpful if changes aren't showing up.
+to run the test suites locally. If you're adding functionality to Mailchimp Open Commerce, you should add tests for the added functionality. You can run the tests locally without cache if necessary by passing the `--no-cache` flag. This can be helpful if changes aren't showing up.
 ```sh
 docker-compose run --rm web yarn test --no-cache
 ```
@@ -232,27 +232,27 @@ docker-compose run --rm web yarn test -u
 ```
 
 #### Eslint
-We require that all code contributed to Reaction follows [Reaction's ESLint rules](https://github.com/reactioncommerce/reaction-eslint-config). You can run
+We require that all code contributed to Mailchimp Open Commerce follows [Mailchimp Open Commerce's ESLint rules](https://github.com/mailchimp-open-commerce/eslint-config). You can run
 ```
 docker-compose run --rm web eslint src
 ```
 to run ESLint against your code locally.
 
-Please follow the [Reaction Code Style Guide](https://docs.reactioncommerce.com/docs/styleguide). Check out our guides to [JSDoc](https://docs.reactioncommerce.com/docs/jsdoc-style-guide), [Git](https://docs.reactioncommerce.com/docs/git-style-guide), [error handling](https://docs.reactioncommerce.com/docs/error-handling-guide), [logging](https://docs.reactioncommerce.com/docs/logging), and [React](https://docs.reactioncommerce.com/docs/react-best-practices).
+Please follow the [Mailchimp Open Commerce Code Style Guide](https://docs.reactioncommerce.com/docs/styleguide). Check out our guides to [JSDoc](https://docs.reactioncommerce.com/docs/jsdoc-style-guide), [Git](https://docs.reactioncommerce.com/docs/git-style-guide), [error handling](https://docs.reactioncommerce.com/docs/error-handling-guide), [logging](https://docs.reactioncommerce.com/docs/logging), and [React](https://docs.reactioncommerce.com/docs/react-best-practices).
 
 We also request that you follow the our [pull request template](https://docs.reactioncommerce.com/docs/contributing-to-reaction#fill-out-the-pull-request-template)
 
 Get more details in our [Contributing Guide](https://docs.reactioncommerce.com/docs/contributing-to-reaction).
 
 ### Developer Certificate of Origin
-We use the [Developer Certificate of Origin (DCO)](https://developercertificate.org/) in lieu of a Contributor License Agreement for all contributions to Reaction Commerce open source projects. We request that contributors agree to the terms of the DCO and indicate that agreement by signing all commits made to Reaction Commerce projects by adding a line with your name and email address to every Git commit message contributed:
+We use the [Developer Certificate of Origin (DCO)](https://developercertificate.org/) in lieu of a Contributor License Agreement for all contributions to Mailchimp Open Commerce open source projects. We request that contributors agree to the terms of the DCO and indicate that agreement by signing all commits made to Mailchimp Open Commerce projects by adding a line with your name and email address to every Git commit message contributed:
 ```
 Signed-off-by: Jane Doe <jane.doe@example.com>
 ```
 
 You can sign your commit automatically with Git by using `git commit -s` if you have your `user.name` and `user.email` set as part of your Git configuration.
 
-We ask that you use your real name (please no anonymous contributions or pseudonyms). By signing your commit you are certifying that you have the right have the right to submit it under the open source license used by that particular Reaction Commerce project. You must use your real name (no pseudonyms or anonymous contributions are allowed.)
+We ask that you use your real name (please no anonymous contributions or pseudonyms). By signing your commit you are certifying that you have the right have the right to submit it under the open source license used by that particular Mailchimp Open Commerce project. You must use your real name (no pseudonyms or anonymous contributions are allowed.)
 
 We use the [Probot DCO GitHub app](https://github.com/apps/dco) to check for DCO signoffs of every commit.
 
@@ -260,7 +260,7 @@ If you forget to sign your commits, the DCO bot will remind you and give you det
 
 
 ## License
-   Copyright 2019 Reaction Commerce
+   Copyright 2019 Mailchimp Open Commerce
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.

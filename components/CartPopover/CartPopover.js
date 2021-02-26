@@ -12,7 +12,7 @@ import CheckoutButtons from "components/CheckoutButtons";
 const styles = (theme) => ({
   container: {
     "alignItems": "center",
-    "backgroundColor": theme.palette.reaction.white,
+    "backgroundColor": theme.palette.moc.white,
     "boxShadow": theme.boxShadow.depth2,
     "display": "flex",
     "marginLeft": "auto",

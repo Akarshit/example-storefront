@@ -1,3 +1,8 @@
+# v5.0.0
+Example Storefront v5.0.0 renames all mention of Reaction to Mailchimp Open Commerce. This is a breaking change and expect the following to not work in this version:
+
+1. List to be populated. XXX
+
 # v4.0.1
 Example Storefront v4.0.1 adds minor features, and does contain breaking changes since v4.0.1
 

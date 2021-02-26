@@ -70,9 +70,9 @@ const useStyles = makeStyles((theme) => ({
     height: 320
   },
   logo: {
-    color: theme.palette.reaction.reactionBlue,
+    color: theme.palette.moc.mocBlue,
     marginRight: theme.spacing(1),
-    borderBottom: `solid 5px ${theme.palette.reaction.reactionBlue200}`
+    borderBottom: `solid 5px ${theme.palette.moc.mocBlue200}`
   },
   main: {
     flex: "1 1 auto",
